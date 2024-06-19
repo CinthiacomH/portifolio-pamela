@@ -1,0 +1,86 @@
+@media(max-width: 1280px){
+    
+    .cabecalho{
+        padding: 30px;
+    }
+
+    .home{
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        gap: 30px;
+    }
+
+    .home .informacoes{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .projetos .container-projetos{
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 900px){
+    .cabecalho .menu{
+        display: block; 
+    }
+
+    /* pega todos os itens que após o input e que sao irmaos dele */
+    .cabecalho nav input:checked ~ ul {
+        display: block;
+    }
+
+    .cabecalho nav{
+        position: absolute;
+        top: 30px;
+        right: 20px;  
+        z-index: 1;
+    }
+
+   .cabecalho nav ul{
+        display: none;        
+        background-color: #040203;         
+        padding: 20px;
+        border-radius: 5%;       
+    }
+    
+    .cabecalho nav li a{
+        color: #fff;
+        text-align: center;                
+        padding: 20px;
+        display: block;
+    }
+}
+
+@media(max-width: 425px){
+    .home .informacoes h1{
+        font-size: 30px;
+    }
+
+    .home .informacoes p{
+        font-size: 16px;
+    }
+
+    .home .container-foto img{
+        max-width: 320px;
+    }
+
+    .habilidades{
+        padding: 30px;
+    }
+
+    .projetos{
+        padding: 30px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer .container-footer{
+        flex-direction: column;
+        gap: 20px;
+    }    
+}
